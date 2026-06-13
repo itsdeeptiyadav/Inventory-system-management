@@ -15,7 +15,7 @@ from app.routers.dashboard import router as dashboard_router
 from app.utils.exception_handler import (
     generic_exception_handler
 )
-
+Base.metadata.create_all(bind=engine)
 
 
 app = FastAPI(
