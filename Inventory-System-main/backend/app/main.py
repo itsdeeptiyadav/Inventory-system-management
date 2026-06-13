@@ -16,7 +16,7 @@ from app.utils.exception_handler import (
     generic_exception_handler
 )
 
-Base.metadata.create_all(bind=engine)
+
 
 app = FastAPI(
     title="Inventory Management System",
