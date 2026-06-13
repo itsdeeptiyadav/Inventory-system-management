@@ -14,6 +14,7 @@ function Dashboard() {
   async function fetchDashboard() {
     try {
       const response = await api.get("/dashboard");
+      console.log("API RESPONSE:", response.data);
       setDashboard(response.data);
     } catch (error) {
       console.error(error);
