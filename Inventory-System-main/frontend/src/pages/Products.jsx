@@ -31,7 +31,7 @@ function Products() {
     try {
 
       const response =
-        await api.get("/products");
+        await api.get("/products/");
 
       setProducts(response.data);
 
@@ -49,7 +49,7 @@ function Products() {
     try {
 
       await api.post(
-        "/products",
+        "/products/",
         {
           ...productData,
           price:

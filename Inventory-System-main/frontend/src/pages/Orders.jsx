@@ -37,9 +37,9 @@ function Orders() {
         productsRes,
         customersRes
       ] = await Promise.all([
-        api.get("/orders"),
-        api.get("/products"),
-        api.get("/customers")
+        api.get("/orders/"),
+        api.get("/products/"),
+        api.get("/customers/")
       ]);
 
       setOrders(
@@ -74,7 +74,7 @@ function Orders() {
     try {
 
       await api.post(
-        "/orders",
+        "/orders/",
         {
           customer_id:
             Number(

@@ -27,7 +27,7 @@ function Customers() {
     try {
 
       const response =
-        await api.get("/customers");
+        await api.get("/customers/");
 
       setCustomers(response.data);
 
@@ -51,7 +51,7 @@ function Customers() {
     try {
 
       await api.post(
-        "/customers",
+        "/customers/",
         formData
       );
 
